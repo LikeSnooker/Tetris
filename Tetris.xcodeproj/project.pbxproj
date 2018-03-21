@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A035F481C46194B006CFC00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A035F471C46194B006CFC00 /* main.m */; };
+		2A035F4B1C46194B006CFC00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A035F4A1C46194B006CFC00 /* AppDelegate.m */; };
+		2A035F4E1C46194B006CFC00 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A035F4D1C46194B006CFC00 /* ViewController.m */; };
+		2A035F511C46194B006CFC00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A035F4F1C46194B006CFC00 /* Main.storyboard */; };
+		2A035F531C46194B006CFC00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A035F521C46194B006CFC00 /* Assets.xcassets */; };
+		2A035F561C46194B006CFC00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A035F541C46194B006CFC00 /* LaunchScreen.storyboard */; };
+		2A035F631C4619CE006CFC00 /* PSPGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A035F5E1C4619CE006CFC00 /* PSPGame.m */; };
+		2A035F641C4619CE006CFC00 /* PSPGameTetris.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A035F601C4619CE006CFC00 /* PSPGameTetris.m */; };
+		2A035F651C4619CE006CFC00 /* PSPScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A035F621C4619CE006CFC00 /* PSPScreen.m */; };
+		2A035F6A1C461EFE006CFC00 /* Digital.TTF in Sources */ = {isa = PBXBuildFile; fileRef = 2A035F691C461E7E006CFC00 /* Digital.TTF */; };
+		2A035F6B1C4621C6006CFC00 /* Digital.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 2A035F691C461E7E006CFC00 /* Digital.TTF */; };
+		2A13971E1C5B068C00A5DC7A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A13971C1C5B068C00A5DC7A /* icon.png */; };
+		2A13971F1C5B068C00A5DC7A /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A13971D1C5B068C00A5DC7A /* icon@2x.png */; };
+		2A8F60AB1C4E6D8600B13609 /* delete1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A8F60A71C4E6D8600B13609 /* delete1.mp3 */; };
+		2A8F60AC1C4E6D8600B13609 /* delete2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A8F60A81C4E6D8600B13609 /* delete2.mp3 */; };
+		2A8F60AD1C4E6D8600B13609 /* delete3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A8F60A91C4E6D8600B13609 /* delete3.mp3 */; };
+		2A8F60AE1C4E6D8600B13609 /* delete4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A8F60AA1C4E6D8600B13609 /* delete4.mp3 */; };
+		2A8F60B01C4E6FAA00B13609 /* action.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A8F60AF1C4E6FAA00B13609 /* action.mp3 */; };
+		2A8F60B31C4E709F00B13609 /* levelUp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A8F60B11C4E709F00B13609 /* levelUp.mp3 */; };
+		2A8F60B41C4E709F00B13609 /* lost.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A8F60B21C4E709F00B13609 /* lost.mp3 */; };
+		2AB9EA591C50953700678ECD /* Default-480h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB9EA581C50953700678ECD /* Default-480h@2x.png */; };
+		2AB9EA5D1C5095DA00678ECD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB9EA5A1C5095DA00678ECD /* Default-568h@2x.png */; };
+		2AB9EA5E1C5095DA00678ECD /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB9EA5B1C5095DA00678ECD /* Default-667h@2x.png */; };
+		2AB9EA5F1C5095DA00678ECD /* Default-960h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AB9EA5C1C5095DA00678ECD /* Default-960h@2x.png */; };
+		2AD44FA01C4F507000F24781 /* fastDown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2AD44F9F1C4F507000F24781 /* fastDown.mp3 */; };
+		2AD44FB51C4F5B4B00F24781 /* A.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD44FA21C4F5B4B00F24781 /* A.png */; };
+		2AD44FB61C4F5B4B00F24781 /* A1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD44FA31C4F5B4B00F24781 /* A1.png */; };
+		2AD44FB71C4F5B4B00F24781 /* A按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD44FA41C4F5B4B00F24781 /* A按钮.png */; };
+		2AD44FB81C4F5B4B00F24781 /* A按钮1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD44FA51C4F5B4B00F24781 /* A按钮1.png */; };
+		2AD44FB91C4F5B4B00F24781 /* B.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD44FA61C4F5B4B00F24781 /* B.png */; };
+		2AD44FBA1C4F5B4B00F24781 /* B1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD44FA71C4F5B4B00F24781 /* B1.png */; };
+		2AD44FBB1C4F5B4B00F24781 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD44FA81C4F5B4B00F24781 /* bg.png */; };
+		2AD44FBC1C4F5B4B00F24781 /* C.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD44FA91C4F5B4B00F24781 /* C.png */; };
+		2AD44FBD1C4F5B4B00F24781 /* C1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD44FAA1C4F5B4B00F24781 /* C1.png */; };
+		2AD44FBE1C4F5B4B00F24781 /* yxui.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD44FAB1C4F5B4B00F24781 /* yxui.png */; };
+		2AD44FC01C4F5B4B00F24781 /* 方向A.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD44FAD1C4F5B4B00F24781 /* 方向A.png */; };
+		2AD44FC11C4F5B4B00F24781 /* 方向A1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD44FAE1C4F5B4B00F24781 /* 方向A1.png */; };
+		2AD44FC21C4F5B4B00F24781 /* 方向B.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD44FAF1C4F5B4B00F24781 /* 方向B.png */; };
+		2AD44FC31C4F5B4B00F24781 /* 方向B1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD44FB01C4F5B4B00F24781 /* 方向B1.png */; };
+		2AD44FC41C4F5B4B00F24781 /* 方向C.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD44FB11C4F5B4B00F24781 /* 方向C.png */; };
+		2AD44FC51C4F5B4B00F24781 /* 方向C1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD44FB21C4F5B4B00F24781 /* 方向C1.png */; };
+		2AD44FC61C4F5B4B00F24781 /* 方向D.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD44FB31C4F5B4B00F24781 /* 方向D.png */; };
+		2AD44FC71C4F5B4B00F24781 /* 方向D1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD44FB41C4F5B4B00F24781 /* 方向D1.png */; };
+		2AD44FCB1C4F7B8300F24781 /* B按钮.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD44FC81C4F7B8300F24781 /* B按钮.png */; };
+		2AD44FCC1C4F7B8300F24781 /* B按钮1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD44FC91C4F7B8300F24781 /* B按钮1.png */; };
+		2AD44FCD1C4F7B8300F24781 /* BG640960.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD44FCA1C4F7B8300F24781 /* BG640960.png */; };
+		2AD44FD01C4F8EFC00F24781 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD44FCF1C4F8EFC00F24781 /* UIViewExt.m */; };
+		2ADF70771C4E216F001D9EEC /* SoundTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF70761C4E216F001D9EEC /* SoundTools.m */; };
+		2ADF709F1C4E373E001D9EEC /* gameBg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF709E1C4E373E001D9EEC /* gameBg.mp3 */; };
+		2ADF70A21C4E3A2A001D9EEC /* down.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF70A01C4E3A2A001D9EEC /* down.mp3 */; };
+		2ADF70A31C4E3A2A001D9EEC /* rotation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2ADF70A11C4E3A2A001D9EEC /* rotation.mp3 */; };
+		2AFEDC821C50BC64007014E1 /* GameButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFEDC811C50BC64007014E1 /* GameButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A035F431C46194B006CFC00 /* 黑白游戏机.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "黑白游戏机.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A035F471C46194B006CFC00 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A035F491C46194B006CFC00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2A035F4A1C46194B006CFC00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2A035F4C1C46194B006CFC00 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2A035F4D1C46194B006CFC00 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2A035F501C46194B006CFC00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2A035F521C46194B006CFC00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A035F551C46194B006CFC00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2A035F571C46194B006CFC00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A035F5D1C4619CE006CFC00 /* PSPGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPGame.h; sourceTree = "<group>"; };
+		2A035F5E1C4619CE006CFC00 /* PSPGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPGame.m; sourceTree = "<group>"; };
+		2A035F5F1C4619CE006CFC00 /* PSPGameTetris.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPGameTetris.h; sourceTree = "<group>"; };
+		2A035F601C4619CE006CFC00 /* PSPGameTetris.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPGameTetris.m; sourceTree = "<group>"; };
+		2A035F611C4619CE006CFC00 /* PSPScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPScreen.h; sourceTree = "<group>"; };
+		2A035F621C4619CE006CFC00 /* PSPScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPScreen.m; sourceTree = "<group>"; };
+		2A035F691C461E7E006CFC00 /* Digital.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = Digital.TTF; sourceTree = "<group>"; };
+		2A13971C1C5B068C00A5DC7A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		2A13971D1C5B068C00A5DC7A /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		2A8F60A71C4E6D8600B13609 /* delete1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = delete1.mp3; sourceTree = "<group>"; };
+		2A8F60A81C4E6D8600B13609 /* delete2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = delete2.mp3; sourceTree = "<group>"; };
+		2A8F60A91C4E6D8600B13609 /* delete3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = delete3.mp3; sourceTree = "<group>"; };
+		2A8F60AA1C4E6D8600B13609 /* delete4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = delete4.mp3; sourceTree = "<group>"; };
+		2A8F60AF1C4E6FAA00B13609 /* action.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = action.mp3; sourceTree = "<group>"; };
+		2A8F60B11C4E709F00B13609 /* levelUp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = levelUp.mp3; sourceTree = "<group>"; };
+		2A8F60B21C4E709F00B13609 /* lost.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lost.mp3; sourceTree = "<group>"; };
+		2AB9EA581C50953700678ECD /* Default-480h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-480h@2x.png"; sourceTree = "<group>"; };
+		2AB9EA5A1C5095DA00678ECD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2AB9EA5B1C5095DA00678ECD /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		2AB9EA5C1C5095DA00678ECD /* Default-960h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-960h@2x.png"; sourceTree = "<group>"; };
+		2AD44F9F1C4F507000F24781 /* fastDown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fastDown.mp3; sourceTree = "<group>"; };
+		2AD44FA21C4F5B4B00F24781 /* A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A.png; sourceTree = "<group>"; };
+		2AD44FA31C4F5B4B00F24781 /* A1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A1.png; sourceTree = "<group>"; };
+		2AD44FA41C4F5B4B00F24781 /* A按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "A按钮.png"; sourceTree = "<group>"; };
+		2AD44FA51C4F5B4B00F24781 /* A按钮1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "A按钮1.png"; sourceTree = "<group>"; };
+		2AD44FA61C4F5B4B00F24781 /* B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = B.png; sourceTree = "<group>"; };
+		2AD44FA71C4F5B4B00F24781 /* B1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = B1.png; sourceTree = "<group>"; };
+		2AD44FA81C4F5B4B00F24781 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		2AD44FA91C4F5B4B00F24781 /* C.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = C.png; sourceTree = "<group>"; };
+		2AD44FAA1C4F5B4B00F24781 /* C1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = C1.png; sourceTree = "<group>"; };
+		2AD44FAB1C4F5B4B00F24781 /* yxui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yxui.png; sourceTree = "<group>"; };
+		2AD44FAD1C4F5B4B00F24781 /* 方向A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "方向A.png"; sourceTree = "<group>"; };
+		2AD44FAE1C4F5B4B00F24781 /* 方向A1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "方向A1.png"; sourceTree = "<group>"; };
+		2AD44FAF1C4F5B4B00F24781 /* 方向B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "方向B.png"; sourceTree = "<group>"; };
+		2AD44FB01C4F5B4B00F24781 /* 方向B1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "方向B1.png"; sourceTree = "<group>"; };
+		2AD44FB11C4F5B4B00F24781 /* 方向C.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "方向C.png"; sourceTree = "<group>"; };
+		2AD44FB21C4F5B4B00F24781 /* 方向C1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "方向C1.png"; sourceTree = "<group>"; };
+		2AD44FB31C4F5B4B00F24781 /* 方向D.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "方向D.png"; sourceTree = "<group>"; };
+		2AD44FB41C4F5B4B00F24781 /* 方向D1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "方向D1.png"; sourceTree = "<group>"; };
+		2AD44FC81C4F7B8300F24781 /* B按钮.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "B按钮.png"; sourceTree = "<group>"; };
+		2AD44FC91C4F7B8300F24781 /* B按钮1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "B按钮1.png"; sourceTree = "<group>"; };
+		2AD44FCA1C4F7B8300F24781 /* BG640960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG640960.png; sourceTree = "<group>"; };
+		2AD44FCE1C4F8EFC00F24781 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		2AD44FCF1C4F8EFC00F24781 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		2ADF70751C4E216F001D9EEC /* SoundTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundTools.h; sourceTree = "<group>"; };
+		2ADF70761C4E216F001D9EEC /* SoundTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundTools.m; sourceTree = "<group>"; };
+		2ADF709E1C4E373E001D9EEC /* gameBg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameBg.mp3; sourceTree = "<group>"; };
+		2ADF70A01C4E3A2A001D9EEC /* down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = down.mp3; sourceTree = "<group>"; };
+		2ADF70A11C4E3A2A001D9EEC /* rotation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rotation.mp3; sourceTree = "<group>"; };
+		2AFEDC801C50BC64007014E1 /* GameButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameButton.h; sourceTree = "<group>"; };
+		2AFEDC811C50BC64007014E1 /* GameButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameButton.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A035F401C46194B006CFC00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A035F3A1C46194B006CFC00 = {
+			isa = PBXGroup;
+			children = (
+				2A035F451C46194B006CFC00 /* Tetris */,
+				2A035F441C46194B006CFC00 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A035F441C46194B006CFC00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A035F431C46194B006CFC00 /* 黑白游戏机.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A035F451C46194B006CFC00 /* Tetris */ = {
+			isa = PBXGroup;
+			children = (
+				2A035F5D1C4619CE006CFC00 /* PSPGame.h */,
+				2A035F5E1C4619CE006CFC00 /* PSPGame.m */,
+				2AD44FCE1C4F8EFC00F24781 /* UIViewExt.h */,
+				2AD44FCF1C4F8EFC00F24781 /* UIViewExt.m */,
+				2A035F5F1C4619CE006CFC00 /* PSPGameTetris.h */,
+				2A035F601C4619CE006CFC00 /* PSPGameTetris.m */,
+				2A035F611C4619CE006CFC00 /* PSPScreen.h */,
+				2A035F621C4619CE006CFC00 /* PSPScreen.m */,
+				2AFEDC801C50BC64007014E1 /* GameButton.h */,
+				2AFEDC811C50BC64007014E1 /* GameButton.m */,
+				2ADF70751C4E216F001D9EEC /* SoundTools.h */,
+				2ADF70761C4E216F001D9EEC /* SoundTools.m */,
+				2A035F491C46194B006CFC00 /* AppDelegate.h */,
+				2A035F4A1C46194B006CFC00 /* AppDelegate.m */,
+				2A035F4C1C46194B006CFC00 /* ViewController.h */,
+				2A035F4D1C46194B006CFC00 /* ViewController.m */,
+				2A035F4F1C46194B006CFC00 /* Main.storyboard */,
+				2A035F521C46194B006CFC00 /* Assets.xcassets */,
+				2A035F541C46194B006CFC00 /* LaunchScreen.storyboard */,
+				2A035F571C46194B006CFC00 /* Info.plist */,
+				2A035F461C46194B006CFC00 /* Supporting Files */,
+			);
+			path = Tetris;
+			sourceTree = "<group>";
+		};
+		2A035F461C46194B006CFC00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A31077E1C507D9A004BD478 /* resource */,
+				2AD44FA11C4F5B4B00F24781 /* pic */,
+				2AD44F9F1C4F507000F24781 /* fastDown.mp3 */,
+				2A8F60B11C4E709F00B13609 /* levelUp.mp3 */,
+				2A8F60B21C4E709F00B13609 /* lost.mp3 */,
+				2A8F60AF1C4E6FAA00B13609 /* action.mp3 */,
+				2A8F60A71C4E6D8600B13609 /* delete1.mp3 */,
+				2A8F60A81C4E6D8600B13609 /* delete2.mp3 */,
+				2A8F60A91C4E6D8600B13609 /* delete3.mp3 */,
+				2A8F60AA1C4E6D8600B13609 /* delete4.mp3 */,
+				2ADF70A01C4E3A2A001D9EEC /* down.mp3 */,
+				2ADF70A11C4E3A2A001D9EEC /* rotation.mp3 */,
+				2ADF709E1C4E373E001D9EEC /* gameBg.mp3 */,
+				2A035F691C461E7E006CFC00 /* Digital.TTF */,
+				2A035F471C46194B006CFC00 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A31077E1C507D9A004BD478 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				2A13971C1C5B068C00A5DC7A /* icon.png */,
+				2A13971D1C5B068C00A5DC7A /* icon@2x.png */,
+				2AB9EA581C50953700678ECD /* Default-480h@2x.png */,
+				2AB9EA5A1C5095DA00678ECD /* Default-568h@2x.png */,
+				2AB9EA5B1C5095DA00678ECD /* Default-667h@2x.png */,
+				2AB9EA5C1C5095DA00678ECD /* Default-960h@2x.png */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		2AD44FA11C4F5B4B00F24781 /* pic */ = {
+			isa = PBXGroup;
+			children = (
+				2AD44FA21C4F5B4B00F24781 /* A.png */,
+				2AD44FA31C4F5B4B00F24781 /* A1.png */,
+				2AD44FA41C4F5B4B00F24781 /* A按钮.png */,
+				2AD44FA51C4F5B4B00F24781 /* A按钮1.png */,
+				2AD44FA61C4F5B4B00F24781 /* B.png */,
+				2AD44FA71C4F5B4B00F24781 /* B1.png */,
+				2AD44FA81C4F5B4B00F24781 /* bg.png */,
+				2AD44FA91C4F5B4B00F24781 /* C.png */,
+				2AD44FAA1C4F5B4B00F24781 /* C1.png */,
+				2AD44FAB1C4F5B4B00F24781 /* yxui.png */,
+				2AD44FC81C4F7B8300F24781 /* B按钮.png */,
+				2AD44FC91C4F7B8300F24781 /* B按钮1.png */,
+				2AD44FCA1C4F7B8300F24781 /* BG640960.png */,
+				2AD44FAD1C4F5B4B00F24781 /* 方向A.png */,
+				2AD44FAE1C4F5B4B00F24781 /* 方向A1.png */,
+				2AD44FAF1C4F5B4B00F24781 /* 方向B.png */,
+				2AD44FB01C4F5B4B00F24781 /* 方向B1.png */,
+				2AD44FB11C4F5B4B00F24781 /* 方向C.png */,
+				2AD44FB21C4F5B4B00F24781 /* 方向C1.png */,
+				2AD44FB31C4F5B4B00F24781 /* 方向D.png */,
+				2AD44FB41C4F5B4B00F24781 /* 方向D1.png */,
+			);
+			path = pic;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A035F421C46194B006CFC00 /* Tetris */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A035F5A1C46194B006CFC00 /* Build configuration list for PBXNativeTarget "Tetris" */;
+			buildPhases = (
+				2A035F3F1C46194B006CFC00 /* Sources */,
+				2A035F401C46194B006CFC00 /* Frameworks */,
+				2A035F411C46194B006CFC00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tetris;
+			productName = Tetris;
+			productReference = 2A035F431C46194B006CFC00 /* 黑白游戏机.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A035F3B1C46194B006CFC00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "张雨";
+				TargetAttributes = {
+					2A035F421C46194B006CFC00 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = M3LH2NWCQ2;
+					};
+				};
+			};
+			buildConfigurationList = 2A035F3E1C46194B006CFC00 /* Build configuration list for PBXProject "Tetris" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A035F3A1C46194B006CFC00;
+			productRefGroup = 2A035F441C46194B006CFC00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A035F421C46194B006CFC00 /* Tetris */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A035F411C46194B006CFC00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A13971E1C5B068C00A5DC7A /* icon.png in Resources */,
+				2AD44FC41C4F5B4B00F24781 /* 方向C.png in Resources */,
+				2AD44FCD1C4F7B8300F24781 /* BG640960.png in Resources */,
+				2A035F6B1C4621C6006CFC00 /* Digital.TTF in Resources */,
+				2AD44FB61C4F5B4B00F24781 /* A1.png in Resources */,
+				2A035F561C46194B006CFC00 /* LaunchScreen.storyboard in Resources */,
+				2A8F60B31C4E709F00B13609 /* levelUp.mp3 in Resources */,
+				2ADF70A21C4E3A2A001D9EEC /* down.mp3 in Resources */,
+				2AD44FC61C4F5B4B00F24781 /* 方向D.png in Resources */,
+				2ADF70A31C4E3A2A001D9EEC /* rotation.mp3 in Resources */,
+				2AD44FB71C4F5B4B00F24781 /* A按钮.png in Resources */,
+				2AD44FC21C4F5B4B00F24781 /* 方向B.png in Resources */,
+				2AD44FC31C4F5B4B00F24781 /* 方向B1.png in Resources */,
+				2AB9EA5D1C5095DA00678ECD /* Default-568h@2x.png in Resources */,
+				2ADF709F1C4E373E001D9EEC /* gameBg.mp3 in Resources */,
+				2AD44FBC1C4F5B4B00F24781 /* C.png in Resources */,
+				2A8F60AD1C4E6D8600B13609 /* delete3.mp3 in Resources */,
+				2AD44FBA1C4F5B4B00F24781 /* B1.png in Resources */,
+				2AD44FCC1C4F7B8300F24781 /* B按钮1.png in Resources */,
+				2AB9EA5F1C5095DA00678ECD /* Default-960h@2x.png in Resources */,
+				2AD44FBE1C4F5B4B00F24781 /* yxui.png in Resources */,
+				2A8F60AB1C4E6D8600B13609 /* delete1.mp3 in Resources */,
+				2AD44FB91C4F5B4B00F24781 /* B.png in Resources */,
+				2AD44FBD1C4F5B4B00F24781 /* C1.png in Resources */,
+				2AD44FA01C4F507000F24781 /* fastDown.mp3 in Resources */,
+				2AD44FB51C4F5B4B00F24781 /* A.png in Resources */,
+				2AB9EA5E1C5095DA00678ECD /* Default-667h@2x.png in Resources */,
+				2A8F60B41C4E709F00B13609 /* lost.mp3 in Resources */,
+				2AD44FC01C4F5B4B00F24781 /* 方向A.png in Resources */,
+				2AD44FCB1C4F7B8300F24781 /* B按钮.png in Resources */,
+				2A8F60AE1C4E6D8600B13609 /* delete4.mp3 in Resources */,
+				2AD44FB81C4F5B4B00F24781 /* A按钮1.png in Resources */,
+				2A8F60AC1C4E6D8600B13609 /* delete2.mp3 in Resources */,
+				2AD44FC71C4F5B4B00F24781 /* 方向D1.png in Resources */,
+				2AD44FC51C4F5B4B00F24781 /* 方向C1.png in Resources */,
+				2A13971F1C5B068C00A5DC7A /* icon@2x.png in Resources */,
+				2A035F531C46194B006CFC00 /* Assets.xcassets in Resources */,
+				2AB9EA591C50953700678ECD /* Default-480h@2x.png in Resources */,
+				2A8F60B01C4E6FAA00B13609 /* action.mp3 in Resources */,
+				2AD44FBB1C4F5B4B00F24781 /* bg.png in Resources */,
+				2A035F511C46194B006CFC00 /* Main.storyboard in Resources */,
+				2AD44FC11C4F5B4B00F24781 /* 方向A1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A035F3F1C46194B006CFC00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A035F6A1C461EFE006CFC00 /* Digital.TTF in Sources */,
+				2ADF70771C4E216F001D9EEC /* SoundTools.m in Sources */,
+				2A035F4E1C46194B006CFC00 /* ViewController.m in Sources */,
+				2A035F641C4619CE006CFC00 /* PSPGameTetris.m in Sources */,
+				2AD44FD01C4F8EFC00F24781 /* UIViewExt.m in Sources */,
+				2A035F631C4619CE006CFC00 /* PSPGame.m in Sources */,
+				2A035F4B1C46194B006CFC00 /* AppDelegate.m in Sources */,
+				2AFEDC821C50BC64007014E1 /* GameButton.m in Sources */,
+				2A035F481C46194B006CFC00 /* main.m in Sources */,
+				2A035F651C4619CE006CFC00 /* PSPScreen.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2A035F4F1C46194B006CFC00 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A035F501C46194B006CFC00 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2A035F541C46194B006CFC00 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A035F551C46194B006CFC00 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A035F581C46194B006CFC00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2A035F591C46194B006CFC00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A035F5B1C46194B006CFC00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = M3LH2NWCQ2;
+				INFOPLIST_FILE = Tetris/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhangyu.Tetris;
+				PRODUCT_NAME = "黑白游戏机";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		2A035F5C1C46194B006CFC00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = M3LH2NWCQ2;
+				INFOPLIST_FILE = Tetris/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhangyu.Tetris;
+				PRODUCT_NAME = "黑白游戏机";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A035F3E1C46194B006CFC00 /* Build configuration list for PBXProject "Tetris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A035F581C46194B006CFC00 /* Debug */,
+				2A035F591C46194B006CFC00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A035F5A1C46194B006CFC00 /* Build configuration list for PBXNativeTarget "Tetris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A035F5B1C46194B006CFC00 /* Debug */,
+				2A035F5C1C46194B006CFC00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A035F3B1C46194B006CFC00 /* Project object */;
+}
